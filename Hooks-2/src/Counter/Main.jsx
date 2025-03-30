@@ -13,7 +13,6 @@ const Main = () => {
      className='bg-amber-400 px-10 py-2 rounded-sm mt-4 '
      onClick={CounterFunc}
      >+ 1</button>
-     
      <Result output = {count}/>
     </div>
   )
