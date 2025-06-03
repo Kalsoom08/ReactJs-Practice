@@ -1,0 +1,12 @@
+.button{
+    background: hsla(0, 0%, 0%, 0.799);
+    color: aquamarine;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 1.2rem;
+    transition: 2s ease-in-out;
+}
+
+.button:hover{
+transform: translateY(-10px)
+}
