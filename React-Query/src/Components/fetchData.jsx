@@ -7,7 +7,11 @@ const FetchData = () => {
     queryKey: 'fetch', 
     queryFn : ()=> axios.get('https://67a0facf5bcfff4fabe147df.mockapi.io/ecommercewebsite').then(
         res => res.data
-    )
+    ),
+    staleTime: 1000 * 60 * 5, //5 min
+    refetchOnWindowFocus: true,
+    refetchOnReconnect: true,
+    refetchInterval: false
    })
 
     if(isLoading) return <p>Loading....</p>
